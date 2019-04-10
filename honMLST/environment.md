@@ -17,6 +17,7 @@ python -m ipykernel install --user --name py3env --display-name "Python 3 (py3en
 ```
 
 4. 运行jupyter  
-`jupyter notebook`
-此时已经可以启动notebook了；修改kernel为我们设定的Python 3 (py3env) 即可。
+`jupyter notebook`  
+此时已经可以启动notebook了；  
+修改kernel为我们设定的Python 3 (py3env) 即可。
 
