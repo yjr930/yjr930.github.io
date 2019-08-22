@@ -69,6 +69,8 @@ cpptools的配置允许有多个，即`configurations`是个列表。我们配�
 ```
 指定编译器。Intellisense是依赖于编译器的，因此需要指定一个。Linux上我们就指定服务器上的g++了，也省的win/msvc和linux/gcc有着千差万别。
 
+# 
+
 ```
 "editor.quickSuggestions": true,
 "C_Cpp.intelliSenseEngine": "Default",
@@ -79,6 +81,8 @@ Intellisense和辅助编辑工具的配置。注意这几项需要在.workspace�
 `C_Cpp.autocomplete`和`editor.quickSuggestions`是是否调用辅助提示的，通常我们都给打开。  
 `C_Cpp.intelliSenseEngineFallback`是指如果发现#include错误是否降级为`Tag Parser`模式。如果总是有include头文件引用问题的话可以尝试打开，但我们尽量把工具配置对，用上`Default`模式。
 
+# 
+
 
 ```
 "includePath": [
@@ -88,7 +92,13 @@ Intellisense和辅助编辑工具的配置。注意这几项需要在.workspace�
     .....
 ]
 ```
-`includePath`如其名。需要注意的是我们需要显式的配置gcc的标准头文件，否则Intellisense会找不到标准库里的东西，会各种提示#include的错误，并且给不出可靠的suggestions。
+`includePath`如其名。需要注意的是我们需要显式的配置gcc的标准头文件，否则Intellisense会找不到标准库里的东西，会各种提示#include的错误，并且给不出可靠的suggestions。  
+寻找gcc的标准头文件可以执行
+```
+`gcc -print-prog-name=cc1plus` -v
+```
+
+# 
 
 ```
 "browse": {
