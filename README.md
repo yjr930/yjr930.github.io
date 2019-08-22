@@ -7,4 +7,4 @@ Content
 划重点 [honMLST/note](/honMLST/note.md)  
 
 ### VSCode bootstrap
-Linux上VSCode部署以及C++编程 [vscode_notes/C++ Programming on Linux with VSCode](vscode_notes/cpp_vsc_linux.md.md)
+Linux上VSCode部署以及C++编程 [vscode_notes/C++ Programming on Linux with VSCode](vscode_notes/cpp_vsc_linux.md)
